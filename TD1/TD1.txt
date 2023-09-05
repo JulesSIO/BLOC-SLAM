@@ -1,3 +1,30 @@
 TD1 Bloc 1 - SLAM
 
 
+1 - Méthode GET & Méthode POST 
+La méthode GET est utilisé dans le cas d'une personnalisation de page Web (filtres, favoris, saisies de recherche...) elle stocke les données sans les chiffrés permettant à l'utilisateur à son retour sur celle-ci de toutes les récuperer directement, avec GET les données sont rendus visibles dans l'URL.
+La méthode POST quant à elle est utilisé dans le cas d'un besoin de confidentialité (soumettre des données personnelles par le biais d'un formulaire ou télécharger des photos) dans cette méthode les données sont rendues invisibles dans l'URL.
+
+2 - CF fichier PNG (Tableau GET & POST)
+
+3 - Le protocole HTTP est extensible car il transite par TCP ou TLS et permet de récuperer en réponse tout sortes de données (images, vidéos, documents, renvois de formulaires HTML vers serveurs)
+Il permet d'intégrer des en-têtes qui offrent différentes transmissions (en-têtes général, requête, réponse, d'entité) 
+
+4 - HTTP est sans état car il ne permet pas le lien entre plusieurs requêtes, plusieurs solutions sont possibles pour contrer ce problème par le biais de cookies et l'extensibilité des en-têtes
+
+5 - Décomposition d'une URL : commence toujours par un protocole qui peut être dissimulé par le naviguateur (http(s)://), suivi d'un sous-domaine (en général www. mais peut être personnalisé), un nom de domaine qui devra être acheté (personnalisé), le nom de domaine se termine toujours par .(com/org/fr/ru/gouv... selon l'origine du site) ce qui suivra dans l'URL sera separé du reste par un / et indiquera le chemin (path) en requête vers le serveur.
+
+6 - 5 familles de codes de réponse HTTP 
+
+1) Réponses informatives - ont pour but d'informer l'utilisateur d'une réponse à venir du serveur, de répondre aux en-têtes upgrade afin d'informer du protocole sur le serveur, permet aussi de répondre aux en-êtes link qui permettent de précharger en attendant la réponse serveur (Continue/Switching Protocols/Processing/Early Hints)
+2) Réponses de Succès - permet de valider la réussite de la requête variant en fonction de la méthode HTTP employé (GET, POST...) (200 OK)
+3) Réponses de redirection - dans le cas d'une requête qui possède plusieurs réponses possibles, à pour but dans ce cas de rediriger l'utilisateur vers les différentes possibilités. Pas de manière standard pour choisir une possibilité mais il est conseillé de le faire sous forme de liens HTML. (Multiple Choices)
+4) Réponses d'erreur - dans le cas d'une incompréhension du serveur concernant la requête pour une erreur de synthaxe ou pour un manque de permission de la part de l'utilisateur nécessitant une authentification ou bloquant simplement l'accès. (Bad Request, Not Authorized, Forbidden)
+5) Répones d'erreur côté serveur - dans le cas d'une situation qu'il ne peut pas traider (Internal Server Error)
+
+7 - Le principe de la négociation entre le client et le serveur est qu'un client transmet une requête au serveur par le biais d'une URL pour obtenir une ressource. Le serveur utilise ensuite l'URL pour choisir parmis les différentes variantes (appelés représentations) en sa possession, il renvoie ensuite la représentation vers le client par le biais d'une URL spécifique.
+La représentation la plus adaptée est choisie selon l'un de ces deux mécanismes : 
+- En-têtes HTTP spécifiques (envoyé par le client) : méthode standard de négociation
+- Codes de réponse HTTP (type Multiple Choices, Not Acceptable, Unsupported Media Type)(envoyé par le serveur) utilisés comme mécanisme de recours.
+
+8 - 
