@@ -2,8 +2,8 @@ TD1 Bloc 1 - SLAM
 
 
 1 - Méthode GET & Méthode POST 
-La méthode GET est utilisé dans le cas d'une personnalisation de page Web (filtres, favoris, saisies de recherche...) elle stocke les données sans les chiffrés permettant à l'utilisateur à son retour sur celle-ci de toutes les récuperer directement, avec GET les données sont rendus visibles dans l'URL.
-La méthode POST quant à elle est utilisé dans le cas d'un besoin de confidentialité (soumettre des données personnelles par le biais d'un formulaire ou télécharger des photos) dans cette méthode les données sont rendues invisibles dans l'URL.
+La méthode GET est utilisé dans le cas d'une personnalisation de page Web (filtres, favoris, saisies de recherche...) elle stocke les données sans les chiffrés permettant à l'utilisateur à son retour sur celle-ci de toutes les récuperer directement, avec GET les données sont rendus visibles dans l'URL. Utilisé en général pour recevoir les réponses serveur.
+La méthode POST quant à elle est utilisé dans le cas d'un besoin de confidentialité (soumettre des données personnelles par le biais d'un formulaire ou télécharger des photos) dans cette méthode les données sont rendues invisibles dans l'URL. Utilisé en génral pour transmettre vers un serveur (données personnelles saisis en formulaire, photos, vidéos...)
 
 2 - CF fichier PNG (Tableau GET & POST)
 
