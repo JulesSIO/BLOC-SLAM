@@ -78,3 +78,8 @@ La représentation la plus adaptée est choisie selon l'un de ces deux mécanism
 <address>Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 Server at dev.local Port 80</address>
 </body></html>
 * Connection #0 to host dev.local left intact
+
+6) curl -output localhost
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   360  100   360    0     0  16564      0 --:--:-- --:--:-- --:--:-- 16363
