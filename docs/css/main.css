@@ -1,0 +1,28 @@
+<style>
+		span {
+			color: brown;
+			font-weight: bolder;
+		}
+		
+		h1 {
+			color: purple;
+		}		
+		
+		h2 {
+			color: green;
+		}
+
+		.button {
+			background-color: #1c87c9;
+			border: none;
+			color: white;
+			padding: 20px 34px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	
+	</style>
