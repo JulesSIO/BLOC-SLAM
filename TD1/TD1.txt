@@ -36,22 +36,27 @@ La représentation la plus adaptée est choisie selon l'un de ces deux mécanism
 > User-Agent: curl/8.0.1
 > Accept: */*
 >
-< HTTP/1.1 403 Forbidden
-< Date: Wed, 20 Sep 2023 12:18:40 GMT
+< HTTP/1.1 200 OK
+< Date: Wed, 20 Sep 2023 12:33:34 GMT
 < Server: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6
-< Content-Length: 298
-< Content-Type: text/html; charset=iso-8859-1
+< Last-Modified: Wed, 20 Sep 2023 11:45:45 GMT
+< ETag: "168-605c8ea790dfa"
+< Accept-Ranges: bytes
+< Content-Length: 360
+< Content-Type: text/html
 <
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 Server at dev.local Port 80</address>
-</body></html>
-* Connection #0 to host dev.local left intact
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web local</title>
+</head>
+<body>
+    <h1>TD web  Jules QUENTIN</h1>
+</body>
+</html>* Connection #0 to host dev.local left intact
 
 3/4) curl dev.local/notExisting -v
 
@@ -62,18 +67,18 @@ La représentation la plus adaptée est choisie selon l'un de ces deux mécanism
 > User-Agent: curl/8.0.1
 > Accept: */*
 >
-< HTTP/1.1 403 Forbidden
-< Date: Wed, 20 Sep 2023 12:19:28 GMT
+< HTTP/1.1 404 Not Found
+< Date: Wed, 20 Sep 2023 12:34:05 GMT
 < Server: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6
-< Content-Length: 298
+< Content-Length: 295
 < Content-Type: text/html; charset=iso-8859-1
 <
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
-<title>403 Forbidden</title>
+<title>404 Not Found</title>
 </head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
 <hr>
 <address>Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 Server at dev.local Port 80</address>
 </body></html>
