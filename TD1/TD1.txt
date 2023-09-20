@@ -27,4 +27,54 @@ La représentation la plus adaptée est choisie selon l'un de ces deux mécanism
 - En-têtes HTTP spécifiques (envoyé par le client) : méthode standard de négociation
 - Codes de réponse HTTP (type Multiple Choices, Not Acceptable, Unsupported Media Type)(envoyé par le serveur) utilisés comme mécanisme de recours.
 
-8 - 
+9 - 1/2) curl dev.local -v 
+
+*   Trying 127.0.0.1:80...
+* Connected to dev.local (127.0.0.1) port 80 (#0)
+> GET / HTTP/1.1
+> Host: dev.local
+> User-Agent: curl/8.0.1
+> Accept: */*
+>
+< HTTP/1.1 403 Forbidden
+< Date: Wed, 20 Sep 2023 12:18:40 GMT
+< Server: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6
+< Content-Length: 298
+< Content-Type: text/html; charset=iso-8859-1
+<
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 Server at dev.local Port 80</address>
+</body></html>
+* Connection #0 to host dev.local left intact
+
+3/4) curl dev.local/notExisting -v
+
+*   Trying 127.0.0.1:80...
+* Connected to dev.local (127.0.0.1) port 80 (#0)
+> GET /notExisting HTTP/1.1
+> Host: dev.local
+> User-Agent: curl/8.0.1
+> Accept: */*
+>
+< HTTP/1.1 403 Forbidden
+< Date: Wed, 20 Sep 2023 12:19:28 GMT
+< Server: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6
+< Content-Length: 298
+< Content-Type: text/html; charset=iso-8859-1
+<
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 Server at dev.local Port 80</address>
+</body></html>
+* Connection #0 to host dev.local left intact
