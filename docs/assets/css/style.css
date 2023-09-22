@@ -1,0 +1,19 @@
+	#purple{
+	color: purple;
+	font-size: 30px;
+		}
+	
+	#green{
+	color: green;
+	font-size : 20px;
+		}
+	img{
+		width: 200px;
+		transition: transform .1s;
+		}
+		
+	img:hover{
+		-ms-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+		}
