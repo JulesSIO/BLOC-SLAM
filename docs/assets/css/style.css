@@ -1,19 +1,52 @@
+		
+	body{
+		margin: 0;
+		padding: 0;
+		min-width: 900px;
+		font-family: 'Oswald', sans-serif;
+		}
+		
+		/* Couleur des titres du site*/
+
 	#purple{
 	color: purple;
 	font-size: 30px;
+	text-align: left;
 		}
 	
-	#green{
-	color: green;
-	font-size : 20px;
+		/*bandeau en-tête site + liste horizontale naviguatrice(à retravailler)*/
+	.bandeau{
+		margin-top: 10px;
+		background-color: #130485;
 		}
-	img{
+	
+		/* Pour zoomer les images lorsque l'on passe la souris dessus*/
+	.imggit,.imggit2{
 		width: 200px;
 		transition: transform .1s;
+		margin: 15px;
 		}
-		
-	img:hover{
+
+	.imggit:hover{
 		-ms-transform: scale(1.5);
 		-webkit-transform: scale(1.5);
 		transform: scale(1.5);
 		}
+	.imggit2:hover{
+		-ms-transform: scale(2.5);
+		-webkit-transform: scale(2.5);
+		transform: scale(2.5);
+		}
+		
+		/* Google fonts (police d'écriture)*/
+	p1{
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+		}
+		
+	p2{
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: italic;
+		}
+		
+	
