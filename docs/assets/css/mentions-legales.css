@@ -1,0 +1,149 @@
+	html, body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-family: 'Oswald', sans-serif;
+		background-image: linear-gradient(110deg, #be3de6 0, #a337e9 25%, #8133ec 50%, #5232ee 75%, #0033f1 100%);
+		}
+		
+	.bandeau{
+		display: block;
+		background: transparent;
+		position: fixed;
+		}
+
+	.purple{
+	color: #2337a9;
+	font-size: xx-large;
+	margin-left: 1.2%;
+	background: white;
+	display: inline-block;
+	position: sticky;
+	top: 0px;
+		}
+		
+	.green_title{
+		text-decoration: underline;
+		color: green;
+		}
+		
+	.conteneur_txt{
+		background: white;
+		border: 1px solid white;
+		border-radius: 40px 0 40px 0;
+		}
+	
+	.conteneur_txt h2{
+		margin-top: 2%;
+		}
+	
+	.link:hover{
+		color: #00FF00;
+		}
+	
+	.title3{
+		text-decoration: bold;
+		}
+	
+	.beige{
+		color: #E9967A;
+		}
+		
+	.credit{
+		position: relative;
+		color: white;
+		font-size: 10px;
+		text-align: right;
+		display: inline-block;
+		
+		}
+	
+	#link_credit:hover{
+		color: #00FF00;
+		}		
+				
+				/* ____________________________________Partie Mentions Légales_____________________________________ */
+				
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+	margin-left: 20%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}	
+		
+#Edition{
+}
+#Hébergement{
+}
+#Confid{
+}
+#Cookies{
+}
+#Data{
+}
+		
+		
+	
+		
+		
