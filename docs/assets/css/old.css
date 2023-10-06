@@ -1,0 +1,85 @@
+		
+	body{
+		margin: 0;
+		padding: 0;
+		min-width: 900px;
+		font-family: 'Oswald', sans-serif;
+		background-image: linear-gradient(110deg, #be3de6 0, #a337e9 25%, #8133ec 50%, #5232ee 75%, #0033f1 100%);
+		}
+		
+		/* Couleur titre du site*/
+		/* Mettre un background-image pour faire le bandeau de navigation */
+
+	#purple{
+	color: #2337a9;
+	font-size: xx-large;
+	text-align: left;
+		}
+	
+		/* Pour zoomer les images lorsque l'on passe la souris dessus*/
+	.imggit,.imggit2{
+		width: 200px;
+		transition: transform .1s;
+		margin: 15px;
+		}
+
+	.imggit:hover{
+		-ms-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+		}
+	.imggit2:hover{
+		-ms-transform: scale(2.5);
+		-webkit-transform: scale(2.5);
+		transform: scale(2.5);
+		}
+		
+		/* pour encadrer les paragraphes */
+	.conteneur_text{
+		border: 1px solid white;
+		border-radius: 40px;
+		width: 50%;
+		text-align: center;
+		margin-left: 25%;
+		margin-top: 10px;
+		display: block;
+		box-sizing: border-box;
+		padding: 3%;
+		}
+	.conteneur_images{
+		border-radius: 22px 0 22px 0;
+		border: 1px dashed white;
+		margin-left: 25%;
+		display: block;
+		width: 50%;
+		}
+		
+		
+		/* Google fonts (police d'écriture)*/
+	p1{
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+		padding: 10px;
+		}
+		
+	p2{
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: italic;
+		padding: 10px;
+		}
+		
+	.credit{
+		margin-top: 30px;
+		color: white;
+		padding: 0;
+		font-size: 10px;
+		text-align: right;
+		}
+		
+		/* Faire surbriller le lien en vert quand on survole */
+	#link_credit:hover{
+		color: #00FF00;
+		}
+		
+		
+	
