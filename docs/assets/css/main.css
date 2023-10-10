@@ -48,3 +48,19 @@ body{
 	font-size: 15px;
 }
 
+.footer{
+	background-color: #3B3B3B;
+	text-align: center;
+	color: white;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	position: fixed;
+	height: 5%;
+}
+
+.sous{
+	text-decoration: underline;
+}
+
+
