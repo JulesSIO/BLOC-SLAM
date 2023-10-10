@@ -3,20 +3,48 @@ body{
 }
 
 .bloc2{
-	background-color: orange;
-	width: 20%;
-	color: white;
-	text-shadow: 1px 1px 1px black;
+	background-color: darkorange;
+	width: 30%;
+	height: 20%;
 	border-radius: 20px;
-	display: inline-block;
 	text-align: center;
-	
+	padding: 10px;
+	flex-direction: column;
+	margin: auto;
 }
 
 .bloc1{
 	background: url("../images/df-min.jpg");
-	background-size: 60%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 1000px;
 }
+
+.flexbox{
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.bloc{
+	background-color: white;
+	border-radius: 20px;
+	width: 200px;
+	padding-top: 60px;
+	box-shadow: 2px 2px 2px black;
+}
+
+#titre1{
+	color: white;
+	font-size: 50px;
+}	
+
+#titre2{
+	color: white;
+	font-size: 15px;
+}
+
