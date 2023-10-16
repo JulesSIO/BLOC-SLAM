@@ -34,8 +34,12 @@ body{
 	background-color: white;
 	border-radius: 20px;
 	width: 200px;
-	padding-top: 60px;
+	padding: 13px;
 	box-shadow: 2px 2px 2px black;
+}
+
+.bloc img{
+	width: 50%;
 }
 
 #titre1{
