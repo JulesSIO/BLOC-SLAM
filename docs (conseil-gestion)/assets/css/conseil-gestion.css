@@ -1,0 +1,70 @@
+body{
+	background-color: grey;	
+}
+
+.bloc2{
+	background-color: darkorange;
+	width: 30%;
+	height: 20%;
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+	flex-direction: column;
+	margin: auto;
+}
+
+.bloc1{
+	background: url("../images/df-min.jpg");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 1000px;
+}
+
+.flexbox{
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.bloc{
+	background-color: white;
+	border-radius: 20px;
+	width: 200px;
+	padding: 13px;
+	box-shadow: 2px 2px 2px black;
+}
+
+.bloc img{
+	width: 50%;
+}
+
+#titre1{
+	color: white;
+	font-size: 50px;
+}	
+
+#titre2{
+	color: white;
+	font-size: 15px;
+}
+
+.footer{
+	background-color: #3B3B3B;
+	text-align: center;
+	color: white;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	position: fixed;
+	height: 5%;
+}
+
+.sous{
+	text-decoration: underline;
+}
+
+
