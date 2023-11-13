@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', afficherImage=>{
-    const selectoption=document.getElementById('list-img').value;
-    const image= new Image();
-    image.src='../assets/images/${selectoption}.png';
-    image.onload = () =>{
-        document.getElementById("image").appendChild(image);
-    };
-    image.src='../assets/images/${selectoption}.png';
-    document.getElementById("list-img").addEventListener("change", afficherImage);
+
+function loadImage(imageName) {
+
+    var image = new Image();
+    image.src = imageName;
+  
+
+    document.getElementById("show").src = image.src;
+  };
+  
+document.addEventListener("DOMContentLoaded", ()=>{
+  document.getElementById("select").addEventListener("change", function() {
+
+    var selectedValue = document.getElementById("select").value;
+
+    loadImage(selectedValue);
+  });
 });
