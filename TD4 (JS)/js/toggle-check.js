@@ -1,10 +1,10 @@
 function Afficher(){
     const liste=document.getElementById('liste');
-    liste.style.display="block";
+    const button=document.getElementById('button');
 
-    if(liste.style.display="block"){
-        liste.style.display="none";
+    if (button.checked){
+        liste.style.display="block";
     }else{
-        false;
+        liste.style.display="none";
     }
 };

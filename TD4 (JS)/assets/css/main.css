@@ -10,3 +10,20 @@ body{
 #liste{
     display: none;
 }
+
+#msg{
+    height: 100px;
+}
+
+#container_input{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#result{
+    border: solid 1px black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
