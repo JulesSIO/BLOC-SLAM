@@ -27,3 +27,25 @@ body{
     width: 100%;
     display: flex;
 }
+
+#ecran{
+    width: 800px;
+    height: 150px;
+    background-color: lightgrey;
+}
+
+#pave{
+    margin-top: 20px;
+    width: 800px;
+    height: 400px;
+    background-color: lightgrey;
+}
+
+th button{
+    background-color: white;
+    width: 195px;
+    height: 95px;
+    border-radius: 20px;
+    font-size: 50px;
+    border : solid 1px lightblue;
+}
