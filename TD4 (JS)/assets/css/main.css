@@ -49,3 +49,14 @@ th button{
     font-size: 50px;
     border : solid 1px lightblue;
 }
+
+#resultat{
+    position:absolute;
+    height: 50px;
+    width: 800px;
+    left: 800px;
+    bottom: 810px;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+}
