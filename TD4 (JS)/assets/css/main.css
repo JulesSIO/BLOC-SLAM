@@ -60,3 +60,98 @@ th button{
     font-weight: bold;
     color: darkblue;
 }
+
+h1{
+    text-align: center;
+}
+
+#task-add{
+    border-bottom: solid 1px;
+    margin-bottom: 10px;
+    
+}
+
+#name-task{
+    padding: 10px;
+    margin: 10px;
+}
+
+#button-add{
+    background-color: mediumseagreen;
+    border: none;
+    color: white;
+    margin-left: 300px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#listtask{
+    height: 400px;
+}
+
+#list-task-ul{
+    list-style:none;
+}
+
+.comment{
+    font-weight: bold;
+}
+
+.buttondelete{
+    padding: 2.5spx;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    text-shadow: 1px;
+    margin-left: 100px;
+}
+
+#button-deleteall{
+    border:none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#save-task{
+    border: solid 1px grey;
+}
+
+#name-save{
+    padding: 10px;
+    margin: 10px;
+}
+
+#button-save{
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    margin-left: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#list-save{
+    border: solid 1px grey;
+    margin-top: 10px;
+}
+
+#list-save-task{
+    padding: 10px;
+    margin: 10px;
+}
+
+#button-load{
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    margin-left: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
