@@ -1,7 +1,13 @@
 <?php
-$message = isset($_GET['message']) ? $_GET['message'] : "ERROR : TEXT NO INSERT";
-$color= isset($_GET['color']) ? $_GET['color'] : "black";
-$size= isset($_GET['size']) ? $_GET['size']: "12";
+extract($_GET);
+$message = isset($message) ? $message : "";
+$color= isset($color) ? $color : "black";
+$size= isset($size) ? $size: "12";
+
+if(isset($sizeVar)){
+    $up=($sizeVar=='+')?+10:-10;
+    $size+=$up;
+};
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -28,9 +34,17 @@ $size= isset($_GET['size']) ? $_GET['size']: "12";
     </li>
 </ul>
 
+<form method="GET">
+        <input type="text" name="message" value="<?=$message?>">
+        <input type="color" name="color" value="<?=$color?>">
+        <input type="number" name="size" value="<?=$size?>">
+        <button type="submit" name="sizeVar" value="+">+</button>
+        <button type="submit" name="sizeVar" value="-">-</button>
+        <button type="submit" name="send">ENVOYER</button>
+
+</form>
+
 <p style="color : <?php echo $color?>;font-size: <?php echo $size?>px"><?php echo $message?></p>
-
-
 
 </body>
 </html>

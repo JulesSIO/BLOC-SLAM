@@ -1,3 +1,16 @@
+<?php
+extract ($_POST);
+$message=isset($message)? $message:"";
+$color=isset($color)? $color:"black";
+$size=isset($size)? $size:"12";
+
+if(isset($sizeVar)){
+    $up=($sizeVar=='+')?+10:-10;
+    $size+=$up;
+};
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,12 +22,14 @@
 
 
 <form method="POST">
-    <input type="number" name="number" value="<?php echo $_POST['number']??""?>">
-    <input type="color" name="color" value="<?php echo $_POST['color']??""?>">
-    <textarea name="message" value="<?php echo $_POST['message']??""?>"></textarea>
+    <input type="number" name="size" value="<?php echo $size??""?>">
+    <input type="color" name="color" value="<?php echo $color??""?>">
+    <textarea name="message" ><?php echo $message??'Insérer votre texte'?></textarea>
+    <button type="submit" name="sizeVar" value="+">+</button>
+    <button type="submit" name="sizeVar" value="-">-</button>
     <button type="submit">VALIDER</button>
 </form>
-<p style="color : <?php echo $_POST["color"]??""?>;font-size: <?php echo $_POST["number"]??""?>px"><?php echo $_POST["message"]??""?></p>
+<p style="color : <?php echo $color??""?>;font-size: <?php echo $size??""?>px"><?php echo $message??""?></p>
 
 
 
