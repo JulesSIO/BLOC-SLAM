@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }else{
             result.style.fontFamily="none";
         }
+        
     });
 
     grand.addEventListener('click', function(){
