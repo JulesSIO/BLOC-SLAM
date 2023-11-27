@@ -1,5 +1,5 @@
 <?php
-const LOREM_ARRAY=["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque turpis et dapibus facilisis. Ut ullamcorper iaculis diam et eleifend. Praesent a ex euismod, pharetra eros in, malesuada diam. Nam egestas ex eget mattis accumsan. Quisque rutrum rutrum est, pellentesque blandit quam lobortis imperdiet. Ut ultrices sagittis metus at dignissim. Proin faucibus auctor porttitor. In tincidunt magna convallis tincidunt sagittis. Vestibulum vulputate ante sed neque gravida tristique. Phasellus in ornare mauris. Donec id massa quis ipsum interdum maximus. Suspendisse et eros nec orci tristique egestas.",
+$LOREM_ARRAY=array("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque turpis et dapibus facilisis. Ut ullamcorper iaculis diam et eleifend. Praesent a ex euismod, pharetra eros in, malesuada diam. Nam egestas ex eget mattis accumsan. Quisque rutrum rutrum est, pellentesque blandit quam lobortis imperdiet. Ut ultrices sagittis metus at dignissim. Proin faucibus auctor porttitor. In tincidunt magna convallis tincidunt sagittis. Vestibulum vulputate ante sed neque gravida tristique. Phasellus in ornare mauris. Donec id massa quis ipsum interdum maximus. Suspendisse et eros nec orci tristique egestas.",
     "Cras dui quam, feugiat at nibh nec, mattis egestas tortor. Cras et imperdiet elit, et interdum nisi. Ut egestas scelerisque ex, nec faucibus erat pharetra non. Donec sodales magna sed ultrices fermentum. Mauris pulvinar rhoncus metus sit amet imperdiet. Phasellus ac semper lacus. In lacinia nec odio et aliquet. Nunc elementum enim vitae pretium vehicula. Nulla imperdiet sed lorem et elementum. Aenean ultrices non felis id aliquet. Aliquam id dolor eget arcu gravida euismod. Vestibulum orci ligula, auctor ac arcu lobortis, pharetra posuere libero. Nulla condimentum tempus justo, ut lacinia nisi accumsan nec.",
     "Nullam consequat mauris justo. Vestibulum scelerisque ornare eros, eget varius arcu suscipit sit amet. Vivamus aliquam quis purus et rhoncus. Donec nec pellentesque diam. Nam et venenatis ligula. Aenean vitae libero a sapien mattis congue vel id purus. Vivamus tincidunt vestibulum lacus, quis blandit magna malesuada non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus eleifend sagittis leo, eget pharetra purus dictum vel. Nam porta ultricies quam, at laoreet sapien pellentesque eu. Sed molestie, dolor eget aliquet lobortis, mauris libero ultricies est, id volutpat tellus nibh imperdiet dolor. Morbi nunc diam, varius non elementum a, luctus ut sapien. Nullam erat quam, efficitur nec metus condimentum, pellentesque feugiat enim. Nam mollis purus nec dictum faucibus.",
     "In ullamcorper convallis nisi, et porttitor ipsum varius eu. Morbi non fringilla lorem. Pellentesque molestie magna turpis, sit amet suscipit mauris suscipit eget. Nulla at eleifend diam, quis dapibus arcu. Nullam pharetra interdum sem laoreet gravida. Integer sagittis et nunc eu scelerisque. Vestibulum interdum bibendum lectus ut ultrices. Sed ut scelerisque eros. Suspendisse viverra ex vitae felis ullamcorper cursus. Aenean pretium diam eget eros scelerisque sollicitudin. Nunc ac dolor et leo convallis cursus vel in augue.",
@@ -29,24 +29,16 @@ const LOREM_ARRAY=["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
     "Quisque eget mauris pellentesque, accumsan risus id, sollicitudin nulla. Phasellus quam nulla, faucibus eu sollicitudin quis, rutrum ac est. Suspendisse sed efficitur tortor. Donec mattis nunc vel massa placerat accumsan. Pellentesque tincidunt sed ante ac laoreet. Fusce eget nulla leo. Morbi pretium congue urna, in cursus felis tempus sit amet. Nam lacinia eros id nibh consectetur semper. Vestibulum laoreet sapien ac nibh fermentum, eget iaculis purus lacinia. Duis quis efficitur ipsum. Cras lacinia odio velit, in dapibus lectus accumsan nec. Pellentesque a feugiat metus. Etiam sollicitudin vulputate massa rhoncus auctor. Suspendisse molestie mauris vitae aliquam malesuada.",
     "Nullam eget urna nec elit dignissim molestie. Aenean porta magna gravida, suscipit diam vel, dictum libero. Ut a nisi elit. Aliquam a porta ante. Pellentesque sagittis congue hendrerit. Phasellus ullamcorper ut lorem ac vestibulum. Integer mollis, urna a vestibulum pharetra, tellus tortor egestas risus, eu gravida magna sapien sit amet augue. Sed blandit metus malesuada luctus mattis. Maecenas tristique maximus dolor, et aliquam eros faucibus ac. Nulla pharetra dictum nunc, at semper nibh commodo nec. Fusce hendrerit venenatis leo, a maximus nisi posuere et. Pellentesque tempus ligula sagittis mauris volutpat, ut gravida dolor laoreet. Curabitur et libero enim. Vivamus nulla erat, iaculis in enim sit amet, finibus hendrerit velit. Integer aliquet tortor a euismod mattis. Integer ante augue, condimentum sed consequat in, pellentesque ac sem.",
     "In vulputate dui in tellus laoreet, id mattis lorem malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eu orci eros. Donec varius volutpat ultricies. Nam at dui id nisl tempor consectetur quis sed elit. Nunc quis ipsum vel elit semper hendrerit. Integer tristique dui odio. Nullam felis neque, aliquet sit amet viverra id, viverra ac nisl. Praesent imperdiet pharetra velit, eget finibus urna convallis sed. Integer dignissim odio leo, at finibus sapien vestibulum luctus. Donec lorem risus, volutpat eget dui vel, tincidunt facilisis felis. Vivamus venenatis gravida turpis, quis sodales nisi laoreet et."
-];
-echo count(LOREM_ARRAY);
-//foreach($lorem as $item){
-//    echo "<br>$item<br>";
-//};
+);
 
-$nb=$_POST['number']??0;
-$nbElementsInLorem=count(LOREM_ARRAY);
+$number= $_POST('number');
 
-for ($v=0;$v<$nb;$v++){
-    $paragraphe=LOREM_ARRAY[$v];
-    $v++;
+for ($i=0, $i< $number ;$i++){
+    $paragraphe= $LOREM_ARRAY;
+    $paragraphe[]= $number[rand(0, count($LOREM_ARRAY)-1)]; 
+    echo $paragraphe;
+};
 
-    if($v==$nbElementsInLorem){
-        $v=0;
-    }
-
-}
 ?>
 
 <!DOCTYPE html>
@@ -59,10 +51,11 @@ for ($v=0;$v<$nb;$v++){
 <body>
 
 <form method="POST">
-    <input type="number" max="30" name="number">
+    <input type="number" max="30" min="1" name="number">
     <button type="submit" name="send">Générer</button>
 </form>
 <br>
-<textarea name="generate" readonly="readonly"><?=$paragraphe?></textarea>
+<textarea name="generate" readonly="readonly"></textarea>
 
 </body>
+</html>
