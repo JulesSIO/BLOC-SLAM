@@ -30,31 +30,27 @@ $LOREM_ARRAY=array("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
     "Nullam eget urna nec elit dignissim molestie. Aenean porta magna gravida, suscipit diam vel, dictum libero. Ut a nisi elit. Aliquam a porta ante. Pellentesque sagittis congue hendrerit. Phasellus ullamcorper ut lorem ac vestibulum. Integer mollis, urna a vestibulum pharetra, tellus tortor egestas risus, eu gravida magna sapien sit amet augue. Sed blandit metus malesuada luctus mattis. Maecenas tristique maximus dolor, et aliquam eros faucibus ac. Nulla pharetra dictum nunc, at semper nibh commodo nec. Fusce hendrerit venenatis leo, a maximus nisi posuere et. Pellentesque tempus ligula sagittis mauris volutpat, ut gravida dolor laoreet. Curabitur et libero enim. Vivamus nulla erat, iaculis in enim sit amet, finibus hendrerit velit. Integer aliquet tortor a euismod mattis. Integer ante augue, condimentum sed consequat in, pellentesque ac sem.",
     "In vulputate dui in tellus laoreet, id mattis lorem malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eu orci eros. Donec varius volutpat ultricies. Nam at dui id nisl tempor consectetur quis sed elit. Nunc quis ipsum vel elit semper hendrerit. Integer tristique dui odio. Nullam felis neque, aliquet sit amet viverra id, viverra ac nisl. Praesent imperdiet pharetra velit, eget finibus urna convallis sed. Integer dignissim odio leo, at finibus sapien vestibulum luctus. Donec lorem risus, volutpat eget dui vel, tincidunt facilisis felis. Vivamus venenatis gravida turpis, quis sodales nisi laoreet et."
 );
-
-$number=$_POST['$number'];
-$v=0
-
-while($v<=$number){
-    $lorem=$LOREM_ARRAY[1++];
-    $v++;
-}
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP (TEST)</title>
 </head>
 <body>
-
 <form method="POST">
     <input type="number" max="30" min="1" name="number">
     <button type="submit" name="send">Générer</button>
 </form>
 <br>
-<textarea name="generate" readonly="readonly"><?=$lorem?></textarea>
+<?php 
+    for($v=0;$v<=$_POST['number'];$v++){
+        $array_number=rand(0,29);
+        echo "$LOREM_ARRAY[$array_number]<br><br>";
+    };
+?>
 
 </body>
 </html>
