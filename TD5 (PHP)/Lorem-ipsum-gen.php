@@ -31,14 +31,13 @@ $LOREM_ARRAY=array("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
     "In vulputate dui in tellus laoreet, id mattis lorem malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eu orci eros. Donec varius volutpat ultricies. Nam at dui id nisl tempor consectetur quis sed elit. Nunc quis ipsum vel elit semper hendrerit. Integer tristique dui odio. Nullam felis neque, aliquet sit amet viverra id, viverra ac nisl. Praesent imperdiet pharetra velit, eget finibus urna convallis sed. Integer dignissim odio leo, at finibus sapien vestibulum luctus. Donec lorem risus, volutpat eget dui vel, tincidunt facilisis felis. Vivamus venenatis gravida turpis, quis sodales nisi laoreet et."
 );
 
-$number= $_POST('number');
+$number=$_POST['$number'];
+$v=0
 
-for ($i=0, $i< $number ;$i++){
-    $paragraphe= $LOREM_ARRAY;
-    $paragraphe[]= $number[rand(0, count($LOREM_ARRAY)-1)]; 
-    echo $paragraphe;
-};
-
+while($v<=$number){
+    $lorem=$LOREM_ARRAY[1++];
+    $v++;
+}
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +54,7 @@ for ($i=0, $i< $number ;$i++){
     <button type="submit" name="send">Générer</button>
 </form>
 <br>
-<textarea name="generate" readonly="readonly"></textarea>
+<textarea name="generate" readonly="readonly"><?=$lorem?></textarea>
 
 </body>
 </html>
