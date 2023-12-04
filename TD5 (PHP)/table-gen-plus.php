@@ -8,13 +8,13 @@
 
     echo "<table><tr>";
     while($u<$column){
-        echo "<td>/</td>";
+        echo "<td><input type='checkbox'>/</td>";
         $u++;
     };
     echo "</tr>";
     while($i<$line){
         echo "<tr>";
-        echo str_repeat("<td>*</td>",$u);
+        echo str_repeat("<td><input type='checkbox'>*</td>",$u);
         echo "</tr>";
         $i++;
     }; 
